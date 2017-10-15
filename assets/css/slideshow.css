@@ -1,0 +1,97 @@
+/**
+Stylesheet: Slideshow.css
+	CSS for Slideshow.
+
+License:
+	MIT-style license.
+
+Copyright:
+	Copyright (c) 2008 [Aeron Glemann](http://www.electricprism.com/aeron/).
+	
+HTML:
+	<div class="slideshow">
+		<div class="images" />
+		<div class="captions" />
+		<div class="controller" />
+		<div class="thumbnails" />
+	</div>
+	
+Notes:
+	These next four rules are set by the Slideshow script.
+	You can override any of them with the !important keyword but the slideshow probably will not work as intended.
+*/
+
+.slideshow {
+	display: block;
+	width:651px;
+}
+.slideshow-images {
+	display: block;
+}		
+.slideshow-images img {
+	display: block;
+}		
+.slideshow-thumbnails {
+	overflow: hidden;
+}
+
+/**
+HTML:
+	<div class="slideshow-images">
+		<img />
+		<img />
+	</div>
+	
+Notes:
+	The images div is where the slides are shown.
+	Customize the visible / prev / next classes to effect the slideshow transitions: fading, wiping, etc.
+*/
+
+.slideshow-images {
+	width: 651px;
+}		
+.slideshow-images-visible { 
+	opacity: 1;
+}	
+.slideshow-images-prev { 
+	opacity: 0; 
+}
+.slideshow-images-next { 
+	opacity: 0; 
+}
+/**
+Notes:
+	These are examples of user-defined styles.
+	Customize these classes to your usage of Slideshow.
+*/
+
+.slideshow {
+	width: 651px;
+}
+
+/**
+HTML:
+	<div class="slideshow-captions">
+		...
+	</div>
+	
+Notes:
+	Customize the hidden / visible classes to affect the captions animation.
+*/
+
+/**
+HTML:
+	<div class="slideshow-controller">
+		<ul>
+			<li class="first"><a /></li>
+			<li class="prev"><a /></li>
+			<li class="pause play"><a /></li>
+			<li class="next"><a /></li>
+			<li class="last"><a /></li>
+		</ul>
+	</div>
+	
+Notes:
+	Customize the hidden / visible classes to affect the controller animation.
+*/
+

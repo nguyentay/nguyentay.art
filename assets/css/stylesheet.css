@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'BebasRegular';
+	src: url('http://nguyentayartist.com/assets/css/bebas___-webfont.eot');
+	src: local('â˜º'), url('http://nguyentayartist.com/assets/css/bebas___-webfont.woff') format('woff'), url('bebas___-webfont.ttf') format('truetype'), url('http://nguyentayartist.com/assets/css/bebas___-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CalibriRegular';
+	src: url('http://nguyentayartist.com/assets/css/calibri-webfont.eot');
+	src: local('â˜º'), url('http://nguyentayartist.com/assets/css/calibri-webfont.woff') format('woff'), url('calibri-webfont.ttf') format('truetype'), url('http://nguyentayartist.com/assets/css/calibri-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'EnigmaticUnicodRegula';
+	src: url('http://nguyentayartist.com/assets/css/enigmau_2-webfont.eot');
+	src: local('â˜º'), url('http://nguyentayartist.com/assets/css/enigmau_2-webfont.woff') format('woff'), url('enigmau_2-webfont.ttf') format('truetype'), url('http://nguyentayartist.com/assets/css/enigmau_2-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
