@@ -7,7 +7,10 @@
 {% if page.category == "exhibition" %}
 	<title>Exhibiton</title>
 {% endif %}
-	
+{% if page.category == "pressbook" %}
+    <title>Pressbook</title>
+{% endif %}
+
 	<meta charset="UTF-8"/>
 	<!-- Bootstrap -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -110,9 +113,17 @@
 																					<li><a href="13.html">Exhibition in 2016</a></li>
 																					<li><a href="10.html">Exhibition in 2015</a></li>
 																	</ul>
-												</li>
 {% endif %}
+												</li>
+
 					<li><a href="/pressbook.html">Press Book </a>
+{% if page.category == "pressbook" %}
+																	<ul>
+																			<li><a href="../../cate/17.html">2017</a></li>
+																					<li><a href="../../cate/15.html">2015</a></li>
+																					<li><a href="../../cate/14.html">2016</a></li>
+																	</ul>
+{% endif %}
 										</li>
 					<li><a href="/contact.html">contact</a></li>
 				</ul>
