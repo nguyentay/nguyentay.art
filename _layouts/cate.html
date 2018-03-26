@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+{% if page.category == "catalogue" %}
+	<title>Catalogue</title>
+{% endif %}
+{% if page.category == "exhibition" %}
 	<title>Exhibiton</title>
+{% endif %}
+	
 	<meta charset="UTF-8"/>
 	<!-- Bootstrap -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
