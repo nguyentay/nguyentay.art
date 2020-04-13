@@ -3,22 +3,79 @@
 				DATE:2010-05-15
 =======================================*/
 body{
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
+	font-family: 'IBM Plex Sans';
+	font-size:16px;
 	text-align:center;
 	
 }
 
+.readmore {
+    color:black;
+    text-decoration:underline;
+}
+
+.post-link{
+    color:black;
+}
+
+.post-meta {
+    font-size:12px;
+}
+
+/**
+ * Pagination Style
+ */
+
+.pager {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.pager ul { display: block; margin: 20px 0; }
+.pager  li{list-style: none;}
+.pager  li.previous a{float:left;}
+.pager  li.next a{float:right;}
+.pager  li.disabled {display:none;}
+
+
+
+/**
+ * Tags and Categories Style
+ */
+
+.tags-box  li {
+    list-style: none;
+    font-weight: bold;
+    margin-top:10px;
+}
+.tags-box  .size{
+    font-size: 0.7em; font-weight: bold; vertical-align: super;  
+}
+
+
+/*time style of tages and categories*/
+
+time{
+  margin-left: 15px;
+  font-style: italic;
+}
+
+
 /*======= Common Styles ============*/
-*{margin:0; padding:0}
+
 img,fieldset{border:0}
 .hide{display:none;	visibility:hidden}
 a{text-decoration:none; outline:none; color:#999}
 a:hover{text-decoration:underline}
 ul{list-style:none}
 
+
+
 h3{font-size:16px; padding:0 0 8px 0;}
-h1{display:block; padding:0 0 8px 0;}
+/*h1{display:block; padding:0 0 8px 0;}*/
+h1 {
+	font-family:'Bebas Neue', sans-serif;
+    font-weight: normal;
+}
 
 #topbar{overflow:hidden;position:absolute;height:3px;left:0;right:0;}
 #topbar div{ position:absolute; overflow:hidden; width:300px; height:3px; }
@@ -47,10 +104,10 @@ h1{display:block; padding:0 0 8px 0;}
 
 /*  ===============================BUTTONS================================== */
 
-a.mainbutton{font-family:'BebasRegular', Arial, Helvetica, sans-serif; display:block; width:170px; height:20px; background:#666; text-decoration:none; color:#fff; font-weight:bold; text-align:center; padding:2px 0 0 0; float:left; position:relative;}
+a.mainbutton{font-family:'Bebas Neue', sans-serif; display:block; width:170px; height:20px; background:#666; text-decoration:none; color:#fff; font-weight:bold; text-align:center; padding:2px 0 0 0; float:left; position:relative;}
 a.mainbutton:hover{background:#272525; text-decoration:none;}
 
-a.backbutton{font-family:'BebasRegular', Arial, Helvetica, sans-serif; display:block; width:170px; height:20px; background:#272525; text-decoration:none; color:#fff; font-weight:bold; text-align:center; padding:2px 0 0 0; float:left; margin:0 5px 0 0;}
+a.backbutton{font-family:'Bebas Neue', sans-serif; display:block; width:170px; height:20px; background:#272525; text-decoration:none; color:#fff; font-weight:bold; text-align:center; padding:2px 0 0 0; float:left; margin:0 5px 0 0;}
 
 a.backbutton:hover{background:#666; text-decoration:none;}
 
@@ -64,9 +121,9 @@ a.backbutton:hover{background:#666; text-decoration:none;}
 .header p{
 	width:100%;
 	overflow:hidden;
-	font-size:14px;
+	font-size:18px;
 	line-height:16px;
-	font-family:'BebasRegular', Arial, Helvetica, sans-serif;
+	font-family:'Bebas Neue', sans-serif;
 }
 .header p a{color:#999}
 .header p span{float:right; color:#999}
@@ -76,7 +133,7 @@ a.backbutton:hover{background:#666; text-decoration:none;}
 	padding-top:28px;
 	font-size:40px;
 	line-height:42px;
-	font-family:'BebasRegular', Arial, Helvetica, sans-serif;
+	font-family:'Bebas Neue', sans-serif;
 	color:#333
 }
 .header .logo{
@@ -109,7 +166,7 @@ ul.main_nav li{
 	float:left;
 	font-size:36px;
 	line-height:42px;
-	font-family:'BebasRegular', Arial, Helvetica, sans-serif;
+	font-family:'Bebas Neue', sans-serif;
 }
 
 .logo{
@@ -117,7 +174,7 @@ ul.main_nav li{
 	float:left;
 	font-size:43px;
 	/*line-height:42px;*/
-	font-family:'BebasRegular', Arial, Helvetica, sans-serif;
+	font-family:'Bebas Neue', sans-serif;
 }
 
 .logo a:HOVER
@@ -129,8 +186,8 @@ ul.main_nav li a{color:#333}
 ul.main_nav li a:hover{text-decoration:none; color:#999}
 
 ul.main_nav ul{ margin:10px 0 10px 0; float:left; width:100%;}
-ul.main_nav ul strong{font-size:14px;}
-ul.main_nav ul li{font-family: Arial, Helvetica, sans-serif; display:block; padding:2px 0 2px 0; font-size:13px; line-height:normal;}
+ul.main_nav ul strong{font-size:16px;}
+ul.main_nav ul li{font-family: Arial, Helvetica, sans-serif; display:block; padding:2px 0 2px 0; font-size:16px; line-height:normal;}
 ul.main_nav ul li a{color:#999;}
 ul.main_nav ul li a:hover{color:#000;}
 
@@ -146,12 +203,12 @@ ul.main_nav ul li a:hover{color:#000;}
 	padding:22px 0 14px;
 	float:left;
 	border-top:1px solid #AAB7BF;
-	font-family:'BebasRegular', Arial, Helvetica, sans-serif;
+	font-family:'Bebas Neue', sans-serif;
 	border-top:1px solid #AAB7BF; color:#999;
 }
 .footer_left span{
 	display:block;
-	font-size:12px;
+	font-size:16px;
 	line-height:14px;
 }
 .footer_rgt{
@@ -164,22 +221,22 @@ ul.main_nav ul li a:hover{color:#000;}
 	overflow:hidden;
 	font-weight:normal;
 	padding-bottom: 30px;
-	font-size:12px;
+	font-size:16px;
 	color:#999;
 }
 .footer_rgt h3 span{
 	float:left;
 	font-size:24px;
 	line-height:26px;
-	font-family:'CalibriRegular', Arial, Helvetica, sans-serif;
+	font-family:'CalibriRegular', sans-serif;
 	text-transform:uppercase;
 	color:#999;
 }
 .footer_rgt h3 label{
 	float:right;
-	font-size:12px;
+	font-size:16px;
 	line-height:16px;
-	font-family:'BebasRegular', Arial, Helvetica, sans-serif;
+	font-family:'Bebas Neue', sans-serif;
 }
 
 /*-------pg-inner---------*/
@@ -196,8 +253,8 @@ ul.rgt_list li.last{padding-right:0}
 ul.rgt_list li a{display:block}
 ul.rgt_list li h4{
 	padding:10px 0 0 0;
-	font-size:14px;
-	font-family:'EnigmaticUnicodRegula', Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-family:'EnigmaticUnicodRegula', sans-serif;
 	font-weight:normal;
 	color:#999;
 	margin:0;
@@ -214,7 +271,7 @@ p.pagination a{color:#282B26}
 
 /*  ===============================BASEBAND - COPYRIGHT LINKS ETC================================== */
 
-#baseband{padding:20px 0 0 0;height:60px;color:#999;font-size:11px;}
+#baseband{padding:20px 0 0 0;height:60px;color:#999;font-size:13px;}
 #baseband strong{
 	color:#9a9a9a;
 	font-weight:bold;
@@ -243,7 +300,7 @@ p.pagination a{color:#282B26}
 	margin-bottom: 20px;
 }
 #blog .date {font-size: 17px; color:#999;}
-#blog a.title {word-spacing: 0.2em; font-family:'BebasRegular', Arial, Helvetica, sans-serif; font-size: 20px; text-decoration:none;display: block;padding-bottom: 8px;padding-top: 2px; color:#000;}
+#blog a.title {word-spacing: 0.2em; font-family:'Bebas Neue', sans-serif; font-size: 20px; text-decoration:none;display: block;padding-bottom: 8px;padding-top: 2px; color:#000;}
 #blog .details {margin-top: 10px; padding-bottom: 10px; }
 #blog .details a{ color:#999; text-decoration:none; }
 #blog .item a:hover{text-decoration:underline;}
@@ -360,7 +417,7 @@ a.cell02{color:#000;}
 #details .images .small{border:1px solid #c3c1c1; width:75px; text-align:center; float:left; margin:4px 7px 0 0;}
 #details .content{margin-left:360px; position:relative;}
 #details .options{background:#f6f5f5; padding:15px 20px 48px 20px; margin:0 0 20px 0; position:relative; }
-#details .optionshead{font-family:'BebasRegular', Arial, Helvetica, sans-serif; display:block; color:#666; font-size:20px; font-weight:bold; padding:0 0 34px 0; margin:-5px 0 0 0;}
+#details .optionshead{font-family:'Bebas Neue', sans-serif; display:block; color:#666; font-size:20px; font-weight:bold; padding:0 0 34px 0; margin:-5px 0 0 0;}
 #details .price{color:#000; font-size:30px; font-weight:bold; float:right; position:relative; margin-top:-4px;}
 #details .formtext{clear: none; float:left; position:relative; width:82px; text-align:left; padding:0; font-weight:normal;}
 #details select{width:160px; font-size:11px; color:#666; height:auto; margin:0 0 5px 0;}
