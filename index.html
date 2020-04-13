@@ -16,7 +16,7 @@ layout: cate
       <p class="post-meta">
       {{ site.locales[site.default_locale].PostedInCategories }}
       {% for cat in post.categories %}
-      <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>&nbsp;
+      <a href="{{site.baseurl}}/{{ cat }}">{{ cat }}</a>&nbsp;
       {% endfor %}
       {% if post.tags != empty %}
       {{ site.locales[site.default_locale].Taggedwith }}

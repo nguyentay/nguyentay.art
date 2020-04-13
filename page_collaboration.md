@@ -1,0 +1,45 @@
+---
+layout: cate
+title: Collaborations
+categories: ['Collaborations']
+permalink: /Collaborations/
+---
+<div class="home">
+  <div class="post" itemscope itemtype="http://schema.org/BlogPosting" >
+{% for post in site.posts %}
+{% if post.categories contains 'Collaborations' %}
+  <header class="post-header">
+  <h2 itemprop="name" class="post-title">
+    <a itemprop="url" class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </h2>
+  <meta itemprop="keywords" content="{{ post.tags | join: ',' }}" />
+  <p class="post-meta">
+  {{ site.locales[site.default_locale].PostedInCategories }}
+  {% for cat in post.categories %}
+  <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>&nbsp;
+  {% endfor %}
+  {% if post.tags != empty %}
+  {{ site.locales[site.default_locale].Taggedwith }}
+  {% for tag in post.tags %}
+  <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }} </a>{% unless post.tags.last == tag %}, {% endunless %}
+  {% endfor %}
+  {% endif %}
+  <time itemprop="datePublished" datetime="{{ post.date | date: '%Y-%m-%d' }}">
+    {{ site.locales[site.default_locale].PostDate }}{{ post.date | date: "%b %-d, %Y" }}
+  </time>
+  </p>
+</header>
+<article class="post-content" itemprop="articleBody">
+  {% if post.content contains site.excerpt_separator %}
+  {{ post.excerpt }}
+  <p><a class="readmore" href="{{ post.url | prepend: site.baseurl }}">Read more...</a></p>
+  {% else %}
+  {{ post.content }}
+  {% endif %}
+</article>
+<hr />
+{% endif %}
+{% endfor %}
+  </div>
+  </div>
+

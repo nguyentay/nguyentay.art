@@ -94,12 +94,14 @@
 
 
 					<li><a href="/index.html">home</a></li>
-					<li><a href="/catalogue.html">visual art</a></li>
+					<li><a href="/visual%20art/">visual art</a></li>
 					{% if page.category == "catalogue" or page.categories contains "Visual Art" %}
 					<ul>
-{% for post in site.posts %}
-<li><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }} </li>
-{% endfor %}
+                        {% for post in site.posts %}
+                        {% if post.categories contains "Visual Art" %}
+                        <li><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }} </li>
+                        {% endif%}
+                        {% endfor %}
 						<li><a href="/catalogue/cate/18.html">Artworks 2017</a></li>
 						<li><a href="/catalogue/cate/12.html">Artworks 2016</a></li>
 						<li><a href="/catalogue/cate/9.html">Artworks 2015</a></li>
@@ -117,6 +119,18 @@
 							<li><a href="/exhibiton/cate/13.html">Exhibition in 2016</a></li>
 							<li><a href="/exhibiton/cate/10.html">Exhibition in 2015</a></li>
 						</ul>
+						{% endif %}
+					</li>
+					<li>
+                        <a href="/Collaborations">Collaborations</a>
+					    {% if page.categories contains "Collaborations" %}
+				    	<ul>
+                            {% for post in site.posts %}
+                            {% if post.categories contains "Collaborations" %}
+                            <li><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }} </li>
+                            {% endif%}
+                            {% endfor %}
+    					</ul>
 						{% endif %}
 					</li>
 
@@ -138,6 +152,7 @@
 			<!--module_end-->
 			<!-- End of main_left -->
 			<div class="main_rgt">
+            {% if page.title %}<h1>{{page.title}}</h1>{% endif %}
 				{{content}}
 			</div><!-- End of main_rgt -->
 		</div>

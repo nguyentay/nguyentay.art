@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Vietnam Out in France: Heineken Labels"
-categories: ['Visual Art']
+categories: ['Collaborations']
 tags: 
   - labels
   - visual art
